@@ -25,6 +25,8 @@ php artisan serve
 
 ## Design
 
+Please view the .docx file in root for the same.
+
 Databae schema
 
 Users
