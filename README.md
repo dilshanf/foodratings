@@ -23,6 +23,8 @@ php artisan test
 7. Use command to start the application or alternatively copy the folder to a web server
 php artisan serve
 
+8. Login to the application using the created user as in step 5
+
 ## Design
 
 Please view the .docx file in root for the same.
