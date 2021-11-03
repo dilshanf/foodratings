@@ -5,6 +5,7 @@
 php artisan key:generate
 3. Change the db settings in .env file (Either an sqlite file or a mysql/postgre can be used) - currently configred to sqlite for convinience but absolute path is needed here
 Relative Path - \storage\app\database.sqlite
+Please create an empty .sqlite file to initiate
 
 4. Use command to create database tables
 php artisan migrate
@@ -21,7 +22,7 @@ php artisan serve
 Databae schema
 
 Users
-id 
+id
 name
 user_type
 
