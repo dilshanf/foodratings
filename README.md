@@ -49,3 +49,17 @@ Changes required
 - On viewing any establishments page, a new query will be made to view all the published comments for that establishment id.
 - On creating a new comment, the published and reviewed by fields will be empty.
 - The unpublished comments will be accessible for user_type 2 in a new page, where it can be published, changing the boolean field to True and reviewed by field to the authorising user.
+
+
+## Modified/Added files to framework
+Design changes.docx
+.env
+app\Http\Controllers\Admin\DashboardController.php
+app\Http\Controllers\Auth\AuthController.php
+app\Http\Services\FoodRatingsService.php
+app\resources\views\admin\dashboard.blade.php
+app\resources\views\admin\establishments.blade.php
+app\resources\views\auth\login.blade.php
+app\resources\views\layouts\main.blade.php
+app\routes\web.php
+app\tests\Feature\AppTest.php
