@@ -1,8 +1,11 @@
 ## Instructions
 
-1. Composer install
+1. Use command to install dependencies 
+composer install
+
 2. Use command to generate laravel encryption key
 php artisan key:generate
+
 3. Change the db settings in .env file (Either an sqlite file or a mysql/postgre can be used) - currently configred to sqlite for convinience but absolute path is needed here
 Relative Path - \storage\app\database.sqlite
 Please create an empty .sqlite file to initiate
