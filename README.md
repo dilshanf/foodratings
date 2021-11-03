@@ -52,14 +52,14 @@ Changes required
 
 
 ## Modified/Added files to framework
-Design changes.docx
-.env
-app\Http\Controllers\Admin\DashboardController.php
-app\Http\Controllers\Auth\AuthController.php
-app\Http\Services\FoodRatingsService.php
-app\resources\views\admin\dashboard.blade.php
-app\resources\views\admin\establishments.blade.php
-app\resources\views\auth\login.blade.php
-app\resources\views\layouts\main.blade.php
-app\routes\web.php
-app\tests\Feature\AppTest.php
+- Design changes.docx
+- .env
+- app\Http\Controllers\Admin\DashboardController.php
+- app\Http\Controllers\Auth\AuthController.php
+- app\Http\Services\FoodRatingsService.php
+- app\resources\views\admin\dashboard.blade.php
+- app\resources\views\admin\establishments.blade.php
+- app\resources\views\auth\login.blade.php
+- app\resources\views\layouts\main.blade.php
+- app\routes\web.php
+- app\tests\Feature\AppTest.php
