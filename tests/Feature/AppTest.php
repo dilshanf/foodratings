@@ -50,14 +50,4 @@ class AppTest extends TestCase
         $this->assertGuest();
     }
 
-    public function test_authorities()
-    {
-        $request = Request::create('/', 'GET',[
-        ]);
-
-        $controller = new DashboardController();
-        $response = $controller->index($request);
-
-    }
-
 }

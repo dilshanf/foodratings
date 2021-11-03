@@ -14,7 +14,10 @@ php artisan migrate
 php artisan tinker
 User::factory()->create(['name' => 'test', 'email' => 'test@test.com', 'password' => bcrypt('12345678')]);
 
-6. Use command to start the application or alternatively copy the folder to a web server
+6. Use command to run test
+php artisan test
+
+7. Use command to start the application or alternatively copy the folder to a web server
 php artisan serve
 
 ## Design
