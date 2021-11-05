@@ -19,18 +19,7 @@ use App\Http\Controllers\Auth\AuthController;
 Route::get('login', [AuthController::class, 'index']);
 Route::post('login', [AuthController::class, 'login'])->name('auth'); 
 
-
-// Authenticated responses
-if (Auth::check()) {
-}
-    Route::get('/', [DashboardController::class, 'index']); 
-
-// Get external route with number validation if not validate return 404
-    Route::get('/establishments/{id}', [DashboardController::class, 'getEstablishments'])->where('id', '[0-9]+');; 
-
-    Route::get('logout', [AuthController::class, 'logout']); 
-{
-    // If not logged on return to login page
-    return redirect()->intended('login');
-}
-
+// Authenticated routes
+Route::get('/', [DashboardController::class, 'index'])->middleware('auth'); 
+Route::get('/establishments/{id}', [DashboardController::class, 'getEstablishments'])->where('id', '[0-9]+')->middleware('auth'); 
+Route::get('logout', [AuthController::class, 'logout'])->middleware('auth'); 
