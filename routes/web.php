@@ -16,10 +16,11 @@ use App\Http\Controllers\Auth\AuthController;
 */
 
 // Login routes
-Route::get('login', [AuthController::class, 'index']);
+Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('login', [AuthController::class, 'login'])->name('auth'); 
 
 // Authenticated routes
 Route::get('/', [DashboardController::class, 'index'])->middleware('auth'); 
 Route::get('/establishments/{id}', [DashboardController::class, 'getEstablishments'])->where('id', '[0-9]+')->middleware('auth'); 
 Route::get('logout', [AuthController::class, 'logout'])->middleware('auth'); 
+
