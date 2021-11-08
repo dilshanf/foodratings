@@ -25,32 +25,6 @@
 
 8. Login to the application using the created user as in step 5
 
-## Design
-
-Please view the .docx file in root for the same.
-
-Databae schema
-
-Users
-id
-name
-user_type
-
-Comments
-id (bigint)
-comment (text)
-user - foreign key (Users-id)
-reviewed_by - foreign key (Users-id)
-published (boolean)
-establishment_id - foreign key (Establishments-id)
-
-Changes required
-
-- On viewing any establishments page, a new query will be made to view all the published comments for that establishment id.
-- On creating a new comment, the published and reviewed by fields will be empty.
-- The unpublished comments will be accessible for user_type 2 in a new page, where it can be published, changing the boolean field to True and reviewed by field to the authorising user.
-
-
 ## Modified/Added files to framework
 - Design changes.docx
 - .env
